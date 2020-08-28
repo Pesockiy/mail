@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Eurostile-Reg';
+  src: url('Eurostile-Reg.eot');
+  src: url('Eurostile-Reg.eot?#iefix') format('embedded-opentype'),
+       url('Eurostile-Reg.svg#Eurostile-Reg') format('svg'),
+       url('Eurostile-Reg.ttf') format('truetype'),
+       url('Eurostile-Reg.woff') format('woff'),
+       url('Eurostile-Reg.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
