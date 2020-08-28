@@ -80,76 +80,21 @@
 			margin: 0 auto !important;
 		}
 
-		/*
-		table table table {
-			table-layout: auto;
-		}
-*/
-
-		/* What it does: Uses a better rendering method when resizing images in IE. */
-		img {
-			-ms-interpolation-mode: bicubic;
-		}
-
-		/* What it does: A work-around for email clients meddling in triggered links. */
-		*[x-apple-data-detectors],
-		/* iOS */
-		.x-gmail-data-detectors,
-		/* Gmail */
-		.x-gmail-data-detectors *,
-		.aBn {
-			border-bottom: 0 !important;
-			cursor: default !important;
-			color: inherit !important;
-			text-decoration: none !important;
-			font-size: inherit !important;
-			font-family: inherit !important;
-			font-weight: inherit !important;
-			line-height: inherit !important;
-		}
-
-		/* What it does: Prevents Gmail from displaying an download button on large, non-linked images. */
-		.a6S {
-			display: none !important;
-			opacity: 0.01 !important;
-		}
-
-		/* If the above doesn't work, add a .g-img class to any image in question. */
-		img.g-img+div {
-			display: none !important;
-		}
-
 		/* What it does: Prevents underlining the button text in Windows 10 */
 		.btn {
 			text-decoration: none !important;
 		}
 
-		.btn--pay {
-			-webkit-transition: background-position .4s ease;
-			-o-transition: background-position .4s ease;
-			transition: background-position .4s ease;
 
-		}
-
-		.btn--pay:hover {
-			background-position: 100% 0;
-		}
-
-		/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
-		/* Create one of these media queries for each additional viewport size you'd like to fix */
-		/* Thanks to Eric Lepetit @ericlepetitsf) for help troubleshooting */
-		@media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-
-			/* iPhone 6 and 6+ */
-			.email-container {
-				min-width: 375px !important;
-			}
-		}
 
 	</style>
 
 	<!-- Progressive Enhancements -->
 	<style>
+
+		.email-container {
+				padding: 0 10px;
+			}
 
 		/* Media Queries */
 		@media screen and (max-width: 480px) {
@@ -261,7 +206,7 @@
 						</td>
 					</tr>
 					<tr>
-						<td style="padding-bottom: 15px;padding-top: 15px;font-family: 'Eurostile-Reg'; text-align: center;vertical-align: moddle; background-color: #d7f6ff; color: #1483c8;">
+						<td style="padding-left: 5px;padding-right: 5px;padding-bottom: 15px;padding-top: 15px;font-family: 'Eurostile-Reg'; text-align: center;vertical-align: moddle; background-color: #d7f6ff; color: #1483c8;">
 							<p style="margin: 0;font-size: 16px;line-height: 1.1; font-weight: 600">Станом на 1 липня 2020 року за Вашим особовим
 								рахунком №0123456789 сума до сплати за газ складає</p>
 							<br>
@@ -304,7 +249,7 @@
 														<td style="vertical-align: top">
 															<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 																<tr>
-																	<td style="line-height: 0"><img src="img/item-1-min.png" alt="" width="108" alt="alt_text" border="0" style="display: inline-block;height: auto;"></td>
+																	<td style="line-height: 0"><img src="img/item-1-min.png" alt="" width="108" alt="alt_text" border="0" style="width: 100%;max-width: 109px;display: inline-block;height: auto;"></td>
 																</tr>
 																<tr>
 																	<td>
@@ -317,7 +262,7 @@
 														<td style="vertical-align: top">
 															<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 																<tr>
-																	<td style="line-height: 0"><img src="img/item-2-min.png" alt="" width="108" alt="alt_text" border="0" style="display: inline-block;height: auto;"></td>
+																	<td style="line-height: 0"><img src="img/item-2-min.png" alt="" width="108" alt="alt_text" border="0" style="width: 100%;max-width: 109px;display: inline-block;height: auto;"></td>
 																</tr>
 																<tr>
 																	<td>
@@ -331,7 +276,7 @@
 														<td style="vertical-align: top">
 															<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 																<tr>
-																	<td style="line-height: 0"><img src="img/item-3-min.png" alt="" width="108" alt="alt_text" border="0" style="display: inline-block;height: auto;"></td>
+																	<td style="line-height: 0"><img src="img/item-3-min.png" alt="" width="108" alt="alt_text" border="0" style="width: 100%;max-width: 109px; display: inline-block;height: auto;"></td>
 																</tr>
 																<tr>
 																	<td>
@@ -365,10 +310,10 @@
 								<tbody>
 									<tr>
 										<td tyle="padding-bottom: 20px;padding-top: 16px">
-											<p style="padding-bottom: 6px;padding-top: 6px; margin: 0">Твіaй ГазЗбут.
+											<p style="padding-bottom: 6px;padding-left: 5px;padding-right: 5px;padding-top: 6px; margin: 0">Твіaй ГазЗбут.
 											</p>
 											<br>
-											<p style="padding-bottom: 6px;padding-top: 6px; margin: 0">Надійний та зручний для кожного!</p>
+											<p style="padding-bottom: 6px;padding-left: 5px;padding-right: 5px;padding-top: 6px; margin: 0">Надійний та зручний для кожного!</p>
 										</td>
 									</tr>
 								</tbody>
@@ -381,7 +326,7 @@
 							<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #d7f6ff;">
 								<tr>
 									<td style="font-family: 'Eurostile-Reg';">
-										<p style="margin: 0;padding-bottom: 5px;padding-top: 5px;color: #919191;text-align: center;font-size: 12px;line-height: 1.1">Ви можете відписатися від розсилки, натиснувши на це на <a href="#" target="_blank" style="color: inherit">посилання</a></p>
+										<p style="margin: 0;padding-bottom: 5px; padding-top: 5px;color: #919191;text-align: center;font-size: 12px;line-height: 1.1">Ви можете відписатися від розсилки, натиснувши на це на <a href="#" target="_blank" style="color: inherit">посилання</a></p>
 									</td>
 								</tr>
 							</table>
